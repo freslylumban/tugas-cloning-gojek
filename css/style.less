@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+
+body {
+  font-family: Roboto;
+}
+
+.navigate {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  .navbar {
+    height: 80px;
+    a {
+      &.navbar-brand {
+        margin: 0 40px 0 0;
+        img {
+          width: 119px;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      &.collapse {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 568px;
+  background-size: cover;
+  background-position: center center;
+
+  .col-lg-6 {
+    &.left-column {
+      height: 565px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-family: 'Roboto-Bold', sans-serif;
+        font-size: 48px;
+        width: 93%;
+        color: #ffffff;
+        margin: 0 0 0 10px;
+      }
+      p {
+        font-size: 28px;
+        font-style: italic;
+        color: #f0b323;
+      }
+      button {
+        display: inline;
+        font-size: 16px;
+        border: none;
+        border-radius: 50px;
+        color: #ffffff;
+        background-color: #38701A;
+        padding: 10px 40px;
+        width: 160px;
+      }
+    }
+  }
+}
+
+.gojeknewlogo {
+  margin: 100px 0;
+
+  .col-lg-6 {
+    &.left-column {
+      img {
+        width: 100%;
+        border-radius: 16px;
+      }
+    }
+
+    &.right-column {
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .distance {
+        padding: 0 55px;
+        h2 {
+          font-size: 34px;
+          font-weight: bolder;
+        }
+        p {
+          color: #494a4a;
+        }
+        a {
+          font-size: 18px;
+          color: #00aa13;
+          position: relative;
+
+          &:hover {
+            transform: scaleX(1);
+            visibility: visible;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              background-color: #00aa13;
+              bottom: -2px;
+              left: 0;
+              transform-origin: left center;
+              transition: all .3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-cerdikiawan {
+  #carouselCerdikiawanHome {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          border-radius: 35px;
+        }
+      }
+    }
+    a {
+      &.carousel-control-prev,
+      &.carousel-control-next {
+        i {
+          &.fas {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
