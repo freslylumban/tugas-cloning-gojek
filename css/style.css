@@ -17,6 +17,7 @@ body {
 }
 .navigate .navbar {
   height: 80px;
+  padding: 0;
 }
 .navigate .navbar a.navbar-brand {
   margin: 0 40px 0 0;
@@ -104,10 +105,43 @@ body {
   transform-origin: left center;
   transition: all .3s;
 }
+.carousel-cerdikiawan {
+  margin: 50px 0;
+}
+.carousel-cerdikiawan #carouselCerdikiawanHome .carousel-indicators {
+  bottom: -50px;
+}
+.carousel-cerdikiawan #carouselCerdikiawanHome .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+.carousel-cerdikiawan #carouselCerdikiawanHome .carousel-indicators li.active {
+  background-color: #00aa13;
+}
 .carousel-cerdikiawan #carouselCerdikiawanHome .carousel-inner .carousel-item img {
   border-radius: 35px;
 }
+.carousel-cerdikiawan #carouselCerdikiawanHome a.carousel-control-prev,
+.carousel-cerdikiawan #carouselCerdikiawanHome a.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 45%;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
 .carousel-cerdikiawan #carouselCerdikiawanHome a.carousel-control-prev i.fas,
 .carousel-cerdikiawan #carouselCerdikiawanHome a.carousel-control-next i.fas {
-  color: red;
+  color: #00aa13;
+}
+.carousel-cerdikiawan #carouselCerdikiawanHome a.carousel-control-prev {
+  left: -70px;
+}
+.carousel-cerdikiawan #carouselCerdikiawanHome a.carousel-control-next {
+  right: -70px;
+}
+.our-service {
+  padding: 100px 0;
 }
