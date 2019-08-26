@@ -54,7 +54,7 @@ body {
   color: #f0b323;
 }
 .banner .col-lg-6.left-column button {
-  display: inline;
+  display: inline-block;
   width: 160px;
   font-size: 16px;
   border: none;
