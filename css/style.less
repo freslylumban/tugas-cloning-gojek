@@ -17,6 +17,7 @@ body {
   top: 0;
   background-color: #ffffff;
   z-index: 100;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
   .navbar {
     height: 80px;
     padding: 0;
@@ -63,13 +64,13 @@ body {
       }
       button {
         display: inline;
+        width: 160px;
         font-size: 16px;
         border: none;
         border-radius: 50px;
         color: #ffffff;
         background-color: #38701A;
         padding: 10px 40px;
-        width: 160px;
       }
     }
   }
@@ -176,4 +177,115 @@ body {
 
 .our-service {
   padding: 100px 0;
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 70px 0;
+  }
+  .transport-logistic,
+  .food-fmcg,
+  .payments,
+  .daily-needs,
+  .news-entertainment {
+    margin: 0 0 30px;
+    h2 {
+      &.subtitle {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 16px;
+      }
+    }
+    p {
+      &.desc-subtitle {
+        font-size: 18px;
+      }
+    }
+    .card-carousel {
+      padding: 0 15px;
+      #cardCarouselGojekServiceTransport,
+      #cardCarouselGojekServiceFood,
+      #cardCarouselGojekServicePayments,
+      #cardCarouselGojekServiceDailyNeeds,
+      #cardCarouselGojekServiceNewsEntertainment {
+        .carousel-item {
+          .card-carousel-wrap {
+            display: flex;
+            padding: 15px 0;
+            .card-1,
+            .card-2,
+            .card-3,
+            .card-4,
+            .card-5 {
+              width: 235px;
+              height: 300px;
+              padding: 15px;
+              margin: 0 15px;
+              box-sizing: border-box;
+              border-radius: 20px;
+              text-align: center;
+              background-color: #ffffff;
+              transition: all .3s;
+              box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+              &:hover {
+                box-shadow: 0 6px 18px 0 rgba(0,0,0,.2);
+                cursor: pointer;
+              }
+              img {
+                &.img-card {
+                  margin: 0 0 20px;
+                }
+              }
+              p {
+                &.desc-service {
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+        a {
+          &.carousel-control-prev,
+          &.carousel-control-next {
+            width: 50px;
+            height: 50px;
+            top: -100px;
+            background-color: white;
+            box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+            border-radius: 50%;
+            i {
+              &.fas {
+                color: #00aa13;
+              }
+            }
+          }
+          &.carousel-control-prev {
+            right: 70px;
+            left: unset;
+          }
+          &.carousel-control-next {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #1c1d1d;
+  color: #ffffff;
+  padding: 20px 0 40px;
+  hr {
+    &.hr-footer {
+      background-color: #ffffff;
+    }
+  }
+
+  .footer-copyright {
+    text-align: center;
+    p {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
 }
